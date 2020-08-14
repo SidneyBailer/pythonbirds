@@ -5,10 +5,10 @@ class Pessoa:
         self.filhos = list(filhos)
 
     def cumprimentar(self):
-        return (f"Olá {id (self)}")
+        return (f"Olá {self.nome}")
 
 if __name__ == '__main__':
-    filho1 = Pessoa(nome= "Fernanda")
+    filho1 = "Fernanda"
     pai = Pessoa(filho1, nome= "Sidney")
     print(pai.cumprimentar())
     print(pai.idade)
