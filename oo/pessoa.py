@@ -12,5 +12,8 @@ if __name__ == '__main__':
     pai = Pessoa(filho1, nome= "Sidney")
     print(pai.cumprimentar())
     print(pai.idade)
+    print(pai.__dict__)
     for filho in pai.filhos:
         print(filho)
+    pai.sobrenome = "Bailer" # Atributo dinamico não tem definido dentro da classe
+    print(pai.sobrenome)
